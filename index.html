@@ -4,7 +4,7 @@
  	<meta charset="UTF-8">
  	<meta name="viewport" content='width=device-width, initial-scale=1 shrink-to-fit=no'>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta http-equiv="refresh" content="59">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>ООО Белхромит</title>
     <link rel="icon" 
     href="https://belchromit.by/wp-content/uploads/2021/08/cropped-frame-25-192x192.png" 
@@ -46,7 +46,7 @@
 
 							<ul id="primary-menu" class="menu">
 								<li id="menu" class="present1" >
-									<a href="index.html"> ПРЕЗЕНТАЦИИ</a>
+									<a href="#slide"> ПРЕЗЕНТАЦИИ</a>
 								</li>
 								<li id="menu" class="present2">
 									<a href="index.html">КАТАЛОГ</a>
@@ -72,8 +72,8 @@
 	<main id="primary" class="site-main">
 		<section class="mone">
 			<div class="container">
+				
 				<div class="mone-in">
-
 					<div class="mone-l1">
 						Современные технологии <br>
 						и материалы для комплексных решений
@@ -88,10 +88,12 @@
 					<div class="mone-btn" style="cursor: pointer;">
 						Связаться с нами
 					</div>
-					
-
+			
+				<div class="mone__bg">
+					<img src="images/ph.png">
 				</div>
-			</div>
+
+			</div></div>
 		</section>
 
 		<section id="infa" class="mone-2">
@@ -135,83 +137,52 @@
 					Информационные презентации<span>
 					для комплекссных решений</span>
 				</div>
-
-				<div class="mone3-in initial-slide click-slider">
-					<button type="button" class="swipe-prewiev btn-left click" style></button>
-				<div class="click-list">
-					<div class="click-track">
-
-						<div class="click-slide" data-click-index="-6" id aria-hidden="true" tabindex="-1" style="width: 160px;">
-							<div>
-								<div class="mone-ph cards" style="cursor: pointer;width: 100%; display: inline-block;">
-									<div class="cards_img"><img src="images/znak1.png"></div>
-									<div class="card__text">Жидкий грунт</div>
+				
+				<div class="wrapper">
+					<div class="image-slider swiper-container">
+						<div class="image-slider__wrapper swiper-wrapper">
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/zn.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/zn2.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/zn3.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/zn4.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/zn5.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/zn3.png">
 								</div>
 							</div>
 						</div>
-
-						<div class="click-slide" data-click-index="-6" id aria-hidden="true" tabindex="-1" style="width: 160px;">
-							<div>
-								<div class="mone-ph cards" style="cursor: pointer;width: 100%;display:inline-block;">
-									<div class="cards_img"><img src="images/znak2.png"></div>
-									<div class="card__text">Укрепление грунта</div>
-								</div>
-							</div>
+						
+						<div class="swiper-pagination" style="bottom: 100px;">
 						</div>
-
-						<div class="click-slide" data-click-index="-5" id aria-hidden="true" tabindex="-1" style="width: 160px;">
-							<div>
-								<div class="mone-ph cards" style="cursor: pointer;width: 100%; display: inline-block;">
-									<div class="cards_img"><img src="images/znak3.png"></div>
-									<div class="card__text">Современные материалы</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="click-slide" data-click-index="-4" id aria-hidden="true" tabindex="-1" style="width: 160px;">
-							<div>
-								<div class="mone-ph cards" style="cursor: pointer;width: 100%; display: inline-block;">
-									<div class="cards_img"><img src="images/znak4.png"></div>
-									<div class="card__text">Гидроактиватор</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="click-slide" data-click-index="-3" id aria-hidden="true" tabindex="-1" style="width: 160px;">
-							<div>
-								<div class="mone-ph cards" style="cursor: pointer;width: 100%; display: inline-block;">
-									<div class="cards_img"><img src="images/znak3.png"></div>
-									<div class="card__text">Современные материалы</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="click-slide" data-click-index="-2" id aria-hidden="true" tabindex="-1" style="width: 160px;">
-							<div>
-								<div class="mone-ph cards" style="cursor: pointer;width: 100%; display: inline-block;">
-									<div class="cards_img"><img src="images/znak3.png"></div>
-									<div class="card__text">Современные материалы</div>
-								</div>
-							</div>
-						</div>
-								
-						<div class="click-slide" data-click-index="-1" id aria-hidden="true" tabindex="-1" style="width: 160px;">
-							<div>
-								<div class="mone-ph cards" style="cursor: pointer;width: 100%; display: inline-block;">
-									<div class="cards_img"><img src="images/znak3.png"></div>
-									<div class="card__text">Современные материалы</div>
-								</div>
-							</div>
-						</div>
-
 					</div>
-				</div>
-				</div>
-			</div>
+				</div>	
+
+			</div>	
 		</section>
 
 		<section>
-			<div id="album" class="newsect">
+			<div id="album" class="mone-4">
 				<div class="container">
 
 					<h1 class="title_album">Каталог продукции<span>НПО "СТРИМ"</span></h1>
@@ -311,8 +282,106 @@
 				</div>
 			</div>
 		</section>
+		<section class="mone-5">
+			<div class="container">
+
+				<div class="description">
+					Документы, подтверждающие качество<span>
+					и безопасность продукции</span>
+				</div>
+
+				<div class="wrapper">
+					<div class="image-slider swiper-container">
+						<div class="image-slider__wrapper swiper-wrapper">
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/comp5.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/comp4.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/comp2.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/comp3.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/comp2.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/comp1.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="swiper-pagination" style="bottom: 100px;">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="mone-6">
+			<div class="container">
+				<div class="title__otziv">
+					Отзывы наших клиентов
+				</div>
+				<div class="wrapper">
+					<div class="image-slider2 swiper-container">
+						<div class="image-slider__wrapper swiper-wrapper">
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/comp5.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/comp4.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/comp2.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/comp3.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/comp2.png">
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="images/comp1.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="swiper-pagination" style="bottom: 100px;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 </div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
 	

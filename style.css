@@ -16,47 +16,8 @@ html{
 .header__wr{
 	box-sizing: inherit;
 }
-.swiper-control[data-v-cf480ffa]{
-width:1.302vw;
-position: absolute;
-top:50%;
-transform:translateY(-50%);
-right:2.917vw;
-z-index:2;
-}
-.align-center[data-v-cf480ffa] {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-}
-.column-block[data-v-cf480ffa] {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-}
-div.swiper-control.column-block.align-center{
-    margin: 0;
-    padding: 0;
 
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;
-    -webkit-tap-highlight-color: transparent;
-}
-.swiper.default .controller.active[data-v-cf480ffa] {
-    background-color: #df005b;
-    box-shadow: 0 0 15px rgb(223 0 91 / 50%);
-}
-.swiper-control .controller[data-v-cf480ffa] {
-    width: 0.881vw;
-    height: 0.881vw;
-    border-radius: 50%;
-    background: #fff;
-    cursor: pointer;
-    margin-bottom: 2.344vw;
 
-    transition: .2s ease;
-}
 div.header__l1{
 	position: relative;
 	z-index: 101;
@@ -93,7 +54,10 @@ div.header__l1_flex{
 .logo{
 	display: inline-block;
 }
-
+.mone__bg{
+    position: absolute;
+    left: 550px;
+}
 .header__text{
 	width: 285px;
 	display: inline-block;
@@ -347,13 +311,12 @@ margin-bottom: 48px;
     width: 497px;
 }
 
-section#slide.mone-3{
+.mone-3{
     background: url(images/fon-7.png) no-repeat center;
     background-size: cover;
     position: relative;
-    padding-top: 110px;
-    padding-bottom: 110px;
-    height: 342px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .description{
@@ -363,99 +326,37 @@ section#slide.mone-3{
     line-height: 40px;
     text-align: center;
     color: white;
-    margin-bottom: 48px;
+    margin-top: 20px;
 }
 
 .description span{
     display: block;
     font-weight: 700;
 }
-
-div.mone3-in.click-slider{
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    user-select: none;
-}
-
-.click.swipe-prewiev{
-   top: 120px;
-   left: -52px;
-
-}
-
-.click{
-    height: 40px;
-    width: 40px;
-    border-radius: 100px;
-    z-index: 9;
-    transition: all 0.3s;
-    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
-    background: #626061;
-    font-size: 0;
-    line-height: 0;
-    position: absolute;
-    top: 40%;
-    display: block;
-    padding: 0;
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: transparent;
-    border: none;
-}
-
-button.swipe-prewiev.btn-left.click::before{
-    transform: rotate(135deg);
-    position: absolute;
-    left: 16px;
-    top: 13px;
-}
-
-button.swipe-prewiev.btn-left.click:before{
-    content: '';
-    display: inline-block;
+span.swiper-pagination-bullet{
+    background: 
+    var(--swiper-pagination-bullet-inactive-color, red);
     width: 12px;
     height: 12px;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-    opacity: 1;
 }
 
-
-.click-list{
-    position: relative;
-    display: block;
+.wrapper{
+    padding: 30px;
+    min-height: 100%;
+}
+.image-slider{
+    padding: 30px 0 70px 0;
     overflow: hidden;
-    margin: 0px;
-    padding: 0px;
 }
-
-.click-track{
-    opacity: 1; 
-    width: 4180px;
-      position: relative;
-      top: 0;
-      left: 0;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+.image-slider2{
+    padding: 30px 0 70px 0;
+    overflow: hidden;
 }
-
-.click-track:before{
-    display: table;
-    content: '';
+.image-slider__image{
+    text-align: center;
 }
-
-.initial-slide .click-slide{
-    display: block;
-}
-
-.click-slide{
-    margin-right: 15px;
-    margin-left: 15px;
-    float: left;
-    height: 100%;
-    min-height: 1px;
+.image-slider__image img{
+    max-width: 100%;
 }
 
 .mone-ph{
@@ -486,7 +387,7 @@ button.swipe-prewiev.btn-left.click:before{
     min-height: 44px;
 }
 
-.newsect{
+.mone-4{
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
@@ -542,6 +443,30 @@ button.swipe-prewiev.btn-left.click:before{
     padding-right: 32px;
     justify-content: center;
 }
+
+.mone-5{
+    background: url(images/fon-7.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.title__otziv{
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+/* identical to box height, or 125% */
+
+text-align: center;
+
+color: #012D5C;
+}
+.mone-6{
+padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;}
+
 
 @media screen and (max-width: 992px) { 
                 body{
