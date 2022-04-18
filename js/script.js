@@ -4,6 +4,10 @@ pagination:{
 	el:'.swiper-pagination',
 	clickable: true,
 },
+navigation:{
+	nextEl: '.swiper-button-next',
+	prevEl: '.swiper-button-prev'
+},
 autoplay:{
 	delay:800,
 	stopOnLastSlide:false,
@@ -22,6 +26,10 @@ autoplay:{
 	delay:1000,
 	stopOnLastSlide:false,
 	disableOnInteraction: false
+},
+navigation:{
+	nextEl: '.swiper-button-next',
+	prevEl: '.swiper-button-prev'
 },
 slidesPerView:4,
 });
