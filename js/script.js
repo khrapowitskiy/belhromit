@@ -9,11 +9,11 @@ navigation:{
 	prevEl: '.swiper-button-prev'
 },
 autoplay:{
-	delay:800,
+	delay:2900,
 	stopOnLastSlide:false,
 	disableOnInteraction: false
 },
-slidesPerView:3,
+slidesPerView:6,
 });
 
 new Swiper('.image-slider2', {
@@ -23,7 +23,7 @@ pagination:{
 	clickable: true,
 },
 autoplay:{
-	delay:1000,
+	delay:3000,
 	stopOnLastSlide:false,
 	disableOnInteraction: false
 },
@@ -31,5 +31,5 @@ navigation:{
 	nextEl: '.swiper-button-next',
 	prevEl: '.swiper-button-prev'
 },
-slidesPerView:4,
+slidesPerView:6,
 });

@@ -69,7 +69,10 @@ div.header__l1_flex{
 	font-weight: normal;
 	font-style: normal;
 }
-
+.knopka:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
 .header-time{
    text-align: right;
    width: 223px;
@@ -238,6 +241,14 @@ content: url(images/galka.png);
 left: -2px;
 top: 1px;
 }
+.p1:hover{
+    color: red;
+}
+
+.album__img:hover{
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+}
 
 .mone-btn{
     font-style: normal;
@@ -252,7 +263,9 @@ top: 1px;
     background: #F41C31;
     border-radius: 4px;
 }
-
+.mone-btn:hover{
+    background: #ff555a;
+}
 section#infa.mone-2{
 	padding-top: 116px;
 	padding-bottom: 70px;	
@@ -315,8 +328,8 @@ margin-bottom: 48px;
     background: url(images/fon-7.png) no-repeat center;
     background-size: cover;
     position: relative;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 90px;
+    padding-bottom: 80px;
 }
 
 .description{
@@ -335,21 +348,97 @@ margin-bottom: 48px;
 }
 span.swiper-pagination-bullet{
     background: 
-    var(--swiper-pagination-bullet-inactive-color, red);
+    var(--swiper-pagination-bullet-inactive-color, #c8c8c8);
     width: 12px;
     height: 12px;
 }
-
+span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: 
+    var(--swiper-pagination-bullet-inactive-color, red);
+}
 .wrapper{
     padding: 30px;
     min-height: 100%;
+    position: relative;
+    display: block;
+}
+
+.image-slider__image{
+margin-right: 20px;
+margin-left: 20px;
+}
+div.swiper-button-prev:before{
+    transform: rotate( 135deg );
+    position: absolute;
+    left: 16px;
+    top: 13px;
+    content: ' ';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid #4a5960;
+    border-bottom: 2px solid #4a5960;
+    opacity: 1;
+}
+div.swiper-button-prev{
+height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    z-index: 9;
+    transition: all 0.3s;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+    background: white;
+    font-size: 0;
+    line-height: 0;
+    position: absolute; 
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    margin-top: 15px;
+}
+div.swiper-button-next:before{
+    content: ' ';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid #4a5960;
+    border-bottom: 2px solid #4a5960;
+    opacity: 1;
+    transform: rotate( -45deg );
+    position: absolute;
+    left: 12px;
+    top: 13px;
+}
+div.swiper-button-next{
+height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    z-index: 9;
+    transition: all 0.3s;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+    background: white;
+    font-size: 0;
+    line-height: 0;
+    position: absolute; 
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    margin-top: 15px;
 }
 .image-slider{
-    padding: 30px 0 70px 0;
+    padding: 30px 0 0 0;
     overflow: hidden;
 }
 .image-slider2{
-    padding: 30px 0 70px 0;
+    padding: 30px 0 0 0;
     overflow: hidden;
 }
 .image-slider__image{
@@ -448,8 +537,8 @@ span.swiper-pagination-bullet{
     background: url(images/fon-7.png) no-repeat center;
     background-size: cover;
     position: relative;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 106px;
 }
 .title__otziv{
 font-style: normal;
@@ -546,6 +635,21 @@ padding-top: 80px;
 
 .razrabot span{
     color: #67C204;
+}
+.bul{
+    position: absolute; 
+    right: -60px;
+    top: -250px;
+    transform: scale(0.5) !important;
+    width: 500px;
+}
+
+.mone-7{
+background: url(images/fon4.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    padding-top: 115px;
+    padding-bottom: 116px;
 }
 
 @media screen and (max-width: 992px) { 
