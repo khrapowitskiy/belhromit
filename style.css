@@ -52,7 +52,9 @@ div.header__l1_flex{
 }
 .mone__bg{
     position: absolute;
-    left: 550px;
+   top: 0;
+   right: 5%;
+   left: auto;
 }
 .header__text{
 	width: 285px;
@@ -335,7 +337,7 @@ margin-bottom: 48px;
     line-height: 40px;
     text-align: center;
     color: white;
-    margin-top: 20px;
+   
 }
 
 .description span{
@@ -639,6 +641,8 @@ padding-top: 80px;
     width: 500px;
 }
 
+
+
 .mone-7{
 background: url(images/fon4.jpg) no-repeat center;
     background-size: cover;
@@ -646,18 +650,19 @@ background: url(images/fon4.jpg) no-repeat center;
     padding-top: 115px;
     padding-bottom: 116px;
 }
-.mobile-btn{
+
+.burger-menu{
+    display: none;
+}
+.image-slider4{
+    display: none;
+}
+.image-slider3{
     display: none;
 }
 
-
-
-
 /*media*/
 @media screen and (max-width: 1920px) { 
-}
-
-@media screen and (max-width: 1600px){
 }
 
 @media screen and (max-width: 1440px){
@@ -665,166 +670,157 @@ background: url(images/fon4.jpg) no-repeat center;
         max-width: 1170px;
     }
 }
-@media screen and (max-width: 1335px){
-    .mone__bg{
-       left: 500px;
-    }
-}
 
-@media screen and (max-width: 1280px) { 
-    .mone-in{
-        width: 60%;
-    }
-}
-@media screen and (max-width: 1228px){
-    .mone__bg{
-       left: 450px;
-    }
-}
-@media screen and (max-width: 1164px){
-    .mone__bg{
-       left: 400px;
-    }
-}
-@media screen and (max-width: 1116px){
-    .mone__bg{
-       left: 350px;
-    }
-}
-@media screen and (max-width: 1062px){
-    .mone__bg{
-       left: 270px;
-       z-index: 0;
-    }
-    .mone-ul{
-        z-index: 300;    }
-}
-@media screen and (max-width: 1100px) {
-} 
-
-
-@media screen and (max-width: 992px){
+@media screen and (max-width: 996px){
     .header__l2{
         display: none;
     }
-
-
-    .mobile-btn{
-        height: 50px;
-        color: #333333;
-        transition: all .3s ease;
-        text-decoration: none;
-        padding-right: 50px;
-        cursor: pointer;
-        display: block;
-        background: #F41C31;
-        position: relative;
-        margin-left: 10px;
-    }
-
-    .mobile-btn-in{
-        position: absolute;
-        right: 10px;
-        top: 24px;
-        width: 28px;
-        height: 2px;
-        background: #ffffff;
-    }
-
-    .mobile-btn-in:before{
-                    position: absolute;
-                    display: block;
-                    right: 0;
-                    width: 28px;
-                    height: 2px;
-                    background: #ffffff;
-                    content: "";
-                    top: -6px;
-                    transition: all .3s ease;
-                }
-
-    .mobile-btn-in:after{
-                    content: "";
-                    position: absolute;
-                    display: block;
-                    right: 0;
-                    height: 2px;
-                    background: #ffffff;
-                    width: 16px;
-                    bottom: -6px;
-                    transition: all .3s ease;
-                }
-
-    .mobile-btn:hover .mobile-btn-in:after{
-            width: 28px;
-        }
-
-
-                #site-navigation{
-                    position: fixed;
-                    width: 50%;
-                    left: -90%;
-                    height: 100%;
-                   
-                    top: 0;
-                    z-index: 99;
-                 
-                    padding-top: 20%;
-                    background: #443c3a;
-                    margin-left: 0;
-                    margin-right: 0;
-                    transition: all 1s ease;
-                    box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.2);
-                    padding-left: 10%;
-                }
-                .main-navigation li{
-                    margin-bottom: 0;
-                    border-bottom: 1px solid #fff;
-                }
-                .main-navigation li a{
-                    padding-bottom: 14px;
-                    padding-top: 14px;
-                    color: #fff;
-                }
-                #site-navigation.change{
-                    left: 0;
-                }
-                #primary-menu{
-                    -webkit-flex-direction: column;
-                    -moz-flex-direction: column;
-                    -ms-flex-direction: column;
-                    flex-direction: column;
-                }
-
-                .main-navigation a{
-                    background: none;
-                }
-
+.burger-menu{
+    display: block;
+    
+}
+.image-slider2{
+    display: none;
+}
+.image-slider4{
+    display: flex;
+}
+.image-slider{
+    display: none;
+}
+.image-slider3{
+    display: flex;
+}
+.burger-menu__button{
+    position: relative;
+     display: block;
+    right: 9px;
+    padding-right: 56px;
+    margin-left: 31px;
+    
+    z-index: 30;
+   
+    height: 50px;
+    border-radius: 1%;
+    background-color: #F41C31;
 }
 
-@media screen and (max-width: 900px) {
-    .bul{
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+   position: absolute;
+   width: 35px;
+   height: 2px;
+   background-color: #fff;
+}
+
+    .burger-menu__lines{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .burger-menu__lines::before{
+        content: '';
+        top: -7px;
+    }
+    .burger-menu__lines::after{
+        content: '';
+        top: 7px;
+    }
+    .burger-menu__button:hover .burger-menu__lines{
+        filter: brightness(0.7);
+    }
+
+     
+     .burger-menu_active .burger-menu__lines{
+        background-color: transparent;
+     }
+     .burger-menu_active .burger-menu__lines::before{
+      top: 0;
+      transform: rotate(45deg);
+       transition: 0.5s all ease;
+     }
+     .burger-menu_active .burger-menu__lines::after{
+        top: 0;
+        transform: rotate(-45deg);
+ transition: 0.5s all ease;
+
+     }
+     .burger-menu__nav{
+        padding-top: 80px;
+        position: fixed;
+        z-index: 20;
+
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        background-color: #443c3a;
+        overflow-y: auto;
+       left: -100%;
+        width: 50%;
+     }
+.burger-menu_active .burger-menu__nav{
+    left: 0;
+     transition: 0.9s all ease;
+     position: fixed;
+top: 0;
+}
+.burger-menu__overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+.burger-menu__link{
+    padding: 30px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+color:white;
+font-size: 16px;
+text-decoration: none;
+line-height: 20px;
+font-weight: 600;
+font-style: normal;
+text-align: center;
+border-bottom: 1px solid white;
+
+}
+.burger-menu_active .burger-menu__overlay{
+    display: block;
+}
+.burger-menu__link:hover{
+    filter: brightness(0.7);
+}
+
+
+
+
+.mone-l1{
+    font-weight: 500;
+    font-size: 37px;
+}
+
+.l1{
+    width: 650px;
+}
+.mone__bg{
+    left: 470px;
+    top: 60px;
+}
+.bul{
         display: none;
     }
+    
 }
 
 @media screen and (max-width: 817px){
     .header__text{
         display: none;
     }
-    .mone-in{
-        width: 100%;
-    }
-    .mone-l1{
-        font-size: 28px;
-        line-height: 35px;
-    }
-    .mone__bg{
-        left: 200px;
-       bottom: 20px;    }
-       .l1{
-        width: 650px;
-       }
        .flex-2{
         display: block;
        }
@@ -832,54 +828,8 @@ background: url(images/fon4.jpg) no-repeat center;
         position: relative;
        }
 }
-@media screen and (max-width: 800px){
-   .mone-l1{
-    font-size: 34px;
-    font-weight: 400;
-    width: 400px;
-    line-height: 45px;
-   }
-}
-@media screen and (max-width: 636px){
-   .mone__bg{
-    left: 100px;
-   }
-}
 
-@media screen and (max-width: 584px){
-   .mone__bg{
-    left: 50px;
-    bottom: 20px;
-}
-.l1{
-    width: 550px;
-   }
-   .mone-l1{
-    font-size: 25px;
-   }
-   .mone-btn{
-    z-index: 100;
-   }
- }
 
-@media screen and (max-width: 560px){
-    
-    .mobile-btn{
-        position: absolute;
-                    right: 10px;
-                    top: 90px;
-    }
 
-    .header{
-        width: 100%;
-        position: fixed;
-        z-index: 1000;
-        }
-   .mone-in{
-        top: 40px;
-   }
-   .site-main{
-    width: 100%;
-   }
 
-}
+
