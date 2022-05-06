@@ -13,7 +13,18 @@ autoplay:{
 	stopOnLastSlide:false,
 	disableOnInteraction: false
 },
-slidesPerView:6,
+
+breakpoints: {    
+    480: {
+    slidesPerView: 3
+    },
+    758: {
+    slidesPerView: 4
+    },
+    980: {
+    slidesPerView: 6
+    }
+}
 
 });
 
@@ -34,45 +45,20 @@ navigation:{
 	nextEl: '.swiper-button-next',
 	prevEl: '.swiper-button-prev'
 },
-slidesPerView:6,
+breakpoints: {    
+    480: {
+    slidesPerView: 3
+    },
+    758: {
+    slidesPerView: 4
+    },
+    992: {
+    slidesPerView: 6
+    }
+}
+
 });
 
-
-new Swiper('.image-slider4', {
-	
-pagination:{
-	el:'.swiper-pagination',
-	clickable: true,
-},
-autoplay:{
-	delay:3000,
-	stopOnLastSlide:false,
-	disableOnInteraction: false
-},
-navigation:{
-	nextEl: '.swiper-button-next',
-	prevEl: '.swiper-button-prev'
-},
-slidesPerView:4,
-});
-
-new Swiper('.image-slider3', {
-	
-pagination:{
-	el:'.swiper-pagination',
-	clickable: true,
-},
-autoplay:{
-	delay:3000,
-	stopOnLastSlide:false,
-	disableOnInteraction: false
-},
-navigation:{
-	nextEl: '.swiper-button-next',
-	prevEl: '.swiper-button-prev'
-},
-slidesPerView:4,
-});
 
 function burgerMenu(selector) {
 	let menu = $(selector);
@@ -92,7 +78,7 @@ overlay.on('click', () => toggleMenu());
 		menu.toggleClass('burger-menu_active');
 
 		if (menu.hasClass('burger-menu_active')) {
-			$('body').css();
+			$('body').css('overflow', 'hidden');
 		} else {
 				$('body').css('overflow', 'visible');
 		}
