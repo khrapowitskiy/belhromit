@@ -78,7 +78,7 @@ overlay.on('click', () => toggleMenu());
 		menu.toggleClass('burger-menu_active');
 
 		if (menu.hasClass('burger-menu_active')) {
-			$('body').css('overflow', 'hidden');
+			$('body').css('overflow', 'none');
 		} else {
 				$('body').css('overflow', 'visible');
 		}

@@ -171,6 +171,7 @@ main#primary.site-main{
 	padding: 0;
 	max-width: none;
 	padding-bottom: 0;
+
 }
 
 .mone{
@@ -376,6 +377,8 @@ div.swiper-button-prev:before{
 }
 div.swiper-button-prev{
 height: 40px;
+left: -15px;
+right: auto;
     width: 40px;
     border-radius: 100px;
     z-index: 9;
@@ -407,6 +410,7 @@ div.swiper-button-next:before{
     left: 12px;
     top: 13px;
 }
+
 div.swiper-button-next{
 height: 40px;
     width: 40px;
@@ -425,6 +429,8 @@ height: 40px;
     cursor: pointer;
     color: transparent;
     border: none;
+    right: 3px;
+    left: auto;
     margin-top: 15px;
 }
 .image-slider{
@@ -691,6 +697,7 @@ background: url(images/fon4.jpg) no-repeat center;
 
     .burger-menu{
     display: block;
+     
     }
 
     .burger-menu__button{
@@ -718,6 +725,7 @@ background: url(images/fon4.jpg) no-repeat center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     }
 
     .burger-menu__lines::before{
@@ -732,22 +740,24 @@ background: url(images/fon4.jpg) no-repeat center;
 
     .burger-menu__button:hover .burger-menu__lines{
     filter: brightness(0.7);
+
     }
 
     .burger-menu_active .burger-menu__lines{
     background-color: transparent;
+  
     }
 
     .burger-menu_active .burger-menu__lines::before{
     top: 0;
     transform: rotate(45deg);
-    transition: 0.5s all ease;
+   
     }
 
     .burger-menu_active .burger-menu__lines::after{
     top: 0;
     transform: rotate(-45deg);
-    transition: 0.5s all ease;
+   
     }
 
     .burger-menu__nav{
@@ -761,15 +771,18 @@ background: url(images/fon4.jpg) no-repeat center;
     overflow-y: auto;
     left: -100%;
     width: 50%;
+     top: 0;
+transition: all 2s ease;
     }
 
     .burger-menu_active .burger-menu__nav{
     left: 0;
-    transition: 0.9s all ease;
     position: fixed;
     top: 0;
+    transition: all 2s ease;
     }
-
+ 
+    
     .burger-menu__overlay{
     display: none;
     position: fixed;
@@ -777,6 +790,7 @@ background: url(images/fon4.jpg) no-repeat center;
     left: 0;
     width: 100vw;
     height: 100vh;
+
     z-index: 10;
     }
 
@@ -793,15 +807,17 @@ background: url(images/fon4.jpg) no-repeat center;
     font-style: normal;
     text-align: center;
     border-bottom: 1px solid white;
+    
     }
 
     .burger-menu_active .burger-menu__overlay{
     display: block;
+    
     }
 
     .burger-menu__link:hover{
     filter: brightness(0.7);
-    }
+     }
 
 
     .mone-l1{
