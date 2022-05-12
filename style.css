@@ -3,8 +3,9 @@ body{
 	font-family: 'Inter', sans-serif;
 }
 
-html{
-	box-sizing: border-box;
+img{
+
+    max-width: 100%;
 }
 
 .header{
@@ -12,6 +13,7 @@ html{
 }
 
 .header__wr{
+
 	box-sizing: inherit;
 }
 
@@ -52,9 +54,8 @@ div.header__l1_flex{
 }
 .mone__bg{
     position: absolute;
+   right: 0;
    top: 0;
-   right: 5%;
-   left: auto;
 }
 .header__text{
 	width: 285px;
@@ -439,7 +440,7 @@ height: 40px;
 }
 
 .image-slider2{
-    padding: 30px 0 0 0;
+    
     overflow: hidden;
 }
 .image-slider__image{
@@ -500,7 +501,7 @@ height: 40px;
 
 .album-in{
     display: flex;
-    gap: 16px;
+    gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -644,7 +645,12 @@ padding-top: 80px;
     width: 500px;
 }
 
-
+.one{
+    width: 50%;
+}
+.two{
+    width:50%;
+}
 
 .mone-7{
 background: url(images/fon4.jpg) no-repeat center;
@@ -655,6 +661,9 @@ background: url(images/fon4.jpg) no-repeat center;
 }
 
 .burger-menu{
+    display: none;
+}
+.log2{
     display: none;
 }
 
@@ -675,9 +684,7 @@ background: url(images/fon4.jpg) no-repeat center;
 }
 
 @media screen and (max-width: 1170px) { 
-    .mone__bg{
-        left: 400px;
-    }
+    
      .mone-l1{
     font-weight: 500;
     font-size: 37px;
@@ -685,14 +692,17 @@ background: url(images/fon4.jpg) no-repeat center;
 }
 
 @media screen and (max-width: 1040px) { 
-    .mone__bg{
-        left: 350px;
-    }
+    
 }
 
 @media screen and (max-width: 992px){
     .header__l2{
         display: none;
+    }
+    .mone__bg{
+        top: 0;
+        right: -9%;
+    transform: scale(0.8);
     }
 
     .burger-menu{
@@ -767,7 +777,7 @@ background: url(images/fon4.jpg) no-repeat center;
     display: flex;
     flex-flow: column;
     height: 100%;
-    background-color: #443c3a;
+    background-color: white;
     overflow-y: auto;
     left: -100%;
     width: 50%;
@@ -799,14 +809,18 @@ transition: all 2s ease;
     width: 150px;
     margin-left: auto;
     margin-right: auto;
-    color:white;
+
+  font-style: normal;
+    font-weight: 500;
     font-size: 16px;
-    text-decoration: none;
     line-height: 20px;
-    font-weight: 600;
-    font-style: normal;
+    color: #012D5C;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+    
     text-align: center;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
     
     }
 
@@ -825,17 +839,13 @@ transition: all 2s ease;
     font-size: 37px;
     }
 
-    .l1{
-    width: 700px;
-    }
+    
 
 
     .bul{
     display: none;
     } 
-    .mone__bg{
-        top: 50px;
-    } 
+     
     .mone-in{
         width: 454px;
     }
@@ -845,43 +855,69 @@ transition: all 2s ease;
     width: 200px;
     height: 80px;
    }
+   .mone__bg{
+    top:auto;
+    bottom: 0;
+    transform: scale(0.8);
+   opacity: 0.7;
+
+   }
+   .album__text{
+    font-size: 16px;
+    line-height: 1.2;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+    padding-right: 7px;
+   }
  .header__text{
         display: none;
     }
+    div.swiper-button-next{
+        margin-top: 0;
+    }
+    div.swiper-button-prev{
+        margin-top: 0;
+    }
 }
 @media screen and (max-width: 817px){
-   
+  .title{
+    margin-bottom: 20px;
+    font-size: 25px;
+  } 
+ 
 .burger-menu__nav{
     z-index: 1001;
 }
        .flex-2{
         display: block;
        }
-       .one{
-        width: 100%;
-       }
-       .two{
-        width: 100%;
-       }
+      
 
        .map{
         position: relative;
        }
-       .mone__bg{
-        left: 300px;
-        top: 100px;
+       
+    
+    .one{
+        width: 100%;
     }
-    .l1{
-    width: 550px;
+     .video{
+        margin-right: 65px; 
     }
-   
+    .two{
+        width: 100%;
+    }
 
 }
 
 @media screen and (max-width: 700px){
-    .mone__bg{
-        left: 200px;
-    }
+    
+    .description{
+    font-size: 22px;
+    line-height: 1.4;
+   }
     .mone-l1{
     font-weight: 500;
     font-size: 25px;
@@ -890,21 +926,28 @@ transition: all 2s ease;
     .mone-in{
         width: 700px;
     }
-   .description{
-    font-size: 25px;
-   }
+   
    .title_album{
-       font-size: 25px;
+       font-size: 22px;
+       line-height: 1.4;
+       margin-bottom: 20px;
    }
    .title__otziv{
-       font-size: 25px;
+       font-size: 22px;
    }
-   .title{
-    font-size: 25px;
-   }
+   .wrapper{
+    padding-top: 20px;
+}
+   
 }
 
 @media screen and (max-width: 561px){
+    .album-in{
+        gap:10px;
+    }
+    .album-1{
+        width: 48%;
+    }
     .header_wr{
             position: fixed;
                     left: 0;
@@ -912,27 +955,43 @@ transition: all 2s ease;
                     width: 100%;
                     z-index: 1000;
     }
+
+
     .burger-menu{
         position: absolute;
                    right: 0px;
                     top: 95px;
                 }
+
+
+section#infa.mone-2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
 .mone{
     padding-bottom: 30px;
     padding-top: 30px;
 }
 .mone-l1{
-    line-height: 40px;
+    line-height: 1.4;
 }
 .mone-in{
     width: 450px;
 }
-.l1{
-    width: 450px;
-}
-.mone__bg{
-    top: 35%;
-    left: 30%;
-}
+
+
     
 } 
+@media screen and (max-width: 473px){
+    .log{
+        display: none;
+    }
+    .log2{
+        display: block;
+        margin-top: -8px;
+    }
+    .brand{
+        width:  80px;
+    }
+}
